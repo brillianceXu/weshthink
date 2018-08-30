@@ -1,0 +1,51 @@
+<extend name="Public:base"/>
+<block name="main">
+
+<div class="page-container" style="min-height: 400px;">
+	<p class="f-20 text-success">{$system.title} 后台管理系统<span class="f-14"></span></p>
+	<!-- <p>登录次数：18 </p> -->
+	<p>上次登录IP：{$log.uip}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上次登录时间：{$log.dotime}</p>
+	<p><a href="/Public/usermanual.pdf" target="_blank" style="color: blue;">系统使用说明书</a></p>
+	
+	<table class="table table-border table-bordered table-bg mt-20" style="width: auto;">
+		<thead>
+			<tr>
+				<th colspan="2" scope="col" width="50%">服务器信息</th>
+				<th colspan="2" scope="col" width="50%">统计信息</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th width="30%">开发语言</th>
+				<td><span id="lbServerName">PHP5.4</span></td>
+				<th width="30%">文章总数</th>
+				<td><span id="lbServerName">{$news}</span></td>
+			</tr>
+			<tr>
+				<th>数据库</th>
+				<td>MySQL5.0</td>
+				<th width="30%">产品总数</th>
+				<td><span id="lbServerName">{$policy}</span></td>
+			</tr>
+			<tr>
+				<th>服务器</th>
+				<td>Apache2.2</td>
+				<th width="30%">图片总数</th>
+				<td><span id="lbServerName">{$images} </span></td>
+			</tr>
+			<tr>
+				<th>服务器端口 </th>
+				<td>80</td>
+				<th width="30%">管理员数</th>
+				<td><span id="lbServerName">{$users}</span></td>
+			</tr>
+			<tr>
+				<th>框架 </th>
+				<td>ThinkPHP3.2</td>
+				<th width="30%">访问量</th>
+				<td><span id="lbServerName">{$views}</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</block>

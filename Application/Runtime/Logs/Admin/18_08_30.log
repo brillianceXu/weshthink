@@ -1,0 +1,291 @@
+[ 2018-08-30T07:41:04+08:00 ] 127.0.0.1 /index.php/Admin/Profession/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\800e2f7d0e66a63a7784eec561a4b25e.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2018-08-30T07:41:07+08:00 ] 127.0.0.1 /index.php/Admin/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-08-30T07:41:10+08:00 ] 127.0.0.1 /index.php/Admin/Grade/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\aba05c69ff0c8dc78c750cd0c96a3ac8.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-08-30T07:41:12+08:00 ] 127.0.0.1 /index.php/Admin/Student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-08-30T07:41:15+08:00 ] 127.0.0.1 /index.php/Admin/Score/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-08-30T07:41:16+08:00 ] 127.0.0.1 /index.php/Admin/Score/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 228 行.
+NOTIC: [8] Undefined variable: cate E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 233 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 240 行.
+NOTIC: [8] Undefined variable: pid E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 241 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 249 行.
+NOTIC: [8] Undefined variable: pageArr E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 251 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 254 行.
+NOTIC: [8] Undefined variable: article_count E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 254 行.
+NOTIC: [8] Undefined variable: article E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 276 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 325 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 326 行.
+NOTIC: [8] Undefined variable: str E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 327 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 329 行.
+NOTIC: [8] Undefined variable: totalPage E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 331 行.
+NOTIC: [8] Undefined variable: page E:\www\ScoreQuery\Application\Runtime\Cache\Admin\4b40e4604061f67f18b5d1e0619bd94a.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2018-08-30T07:41:18+08:00 ] 127.0.0.1 /index.php/Admin/Manager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ruochen_admin` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `ruochen_admin` WHERE `status` = 1 AND `username` <> 'admin'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-08-30T07:41:21+08:00 ] 127.0.0.1 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `ruochen_system` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ruochen_menu` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `ruochen_menu` WHERE `status` = 1 AND `level` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ruochen_system` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+

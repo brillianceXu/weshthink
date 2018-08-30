@@ -1,0 +1,145 @@
+h4 {
+    margin-left: 20px;
+}
+
+p {
+    /*text-align: center;*/
+}
+
+/*.btn {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: cornflowerblue;
+}*/
+
+.btn:hover,
+.btn:focus {
+    background-color: #95b4ed;
+}
+
+.modalBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalBox-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    max-height: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-animation: zoom 0.6s;
+    animation: zoom 0.6s;
+    resize: both;
+    overflow: auto;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.modalBox-header {
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close_hide {
+    position: relative;
+    top: -20px;
+    right: -20px;
+    color: #b7b7b7;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.close_hide:hover,
+.close_hide:focus {
+    color: #95b4ed;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBox-body {
+    padding: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.modalBox-footer {
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modalBox-footer button {
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-size: 14px;
+    
+    /*border-radius: 5px;*/
+    
+}
+.modalBox-footer #sure{
+    color: white;
+    background-color: #5eb95e;
+}
+.modalBox-footer #cancel{
+    color: black;
+    background-color: #ccc;
+}
+.modalBox-footer #sure:hover,
+.modalBox-footer #sure:focus {
+    background-color: #5eb95e;
+    cursor: pointer;
+}
+.modalBox-footer #cancel:hover,
+.modalBox-footer #cancel:focus {
+    background-color: #ccc;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .modalBox-content {
+        width: 80%;
+    }
+}

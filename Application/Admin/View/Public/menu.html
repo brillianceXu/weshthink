@@ -1,0 +1,13 @@
+<aside class="Hui-aside" style="top: 34px;">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+        <volist name="menu" id="v">
+        <dl id="menu-article">
+            <dt <if condition="$v.controller eq CONTROLLER_NAME ">class="this-active" style=""</if>>
+                <a href="__APP__/Admin/{$v.controller}/{$v.action}.html" data-title="{$v.name}" style="text-decoration:none;"><i class="Hui-iconfont">{$v.icon}</i> {$v.name}</a>
+            </dt>
+           
+        </dl>
+        </volist>
+    </div>
+</aside>

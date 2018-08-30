@@ -1,0 +1,98 @@
+<extend name="Public:base"/>
+<block name="main">
+<article class="page-container">
+	<form action="__SELF__" method="post" class="form form-horizontal" id="form-admin-add" enctype="multipart/form-data">
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>登录名：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="" placeholder="" id="adminName" name="username">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>初始密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off" value="" placeholder="******" id="password" name="password">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>确认密码：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<input type="password" class="input-text" autocomplete="off"  placeholder="******" id="password2" name="pwd">
+		</div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3">角色：</label>
+		<div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
+			<select class="select" name="roleid" size="1">
+				<option value="2">普通管理员</option>
+				<option value="1">超级管理员</option>
+			</select>
+			</span> </div>
+	</div>
+	<div class="row cl">
+		<label class="form-label col-xs-4 col-sm-3">备注：</label>
+		<div class="formControls col-xs-8 col-sm-9">
+			<textarea name="note" cols="" rows="" class="textarea"  placeholder="说点什么...100个字符以内" dragonfly="true" onKeyUp="textarealength(this,100)"></textarea>
+			<p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+		</div>
+	</div>
+	<div class="row cl">
+		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			<button onClick="article_save();" class="btn btn-primary radius" type="button">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+			<button onClick="remove_input();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+		</div>
+	</div>
+	</form>
+</article>
+
+<script type="text/javascript" src="/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+	function article_save(){
+		var username=$("input[name=username]").val();
+		// username=username.replace(/ /g,'');
+		var password=$("input[name=password]").val();
+		// password=password.replace(/ /g,'');
+		var pwd=$("input[name=pwd]").val();
+		// pwd=pwd.replace(/ /g,'');
+		// var sex=$("input[name=sex]").val();
+		var mobile=$("input[name=mobile]").val();
+		// mobile=mobile.replace(/ /g,'');
+		var email=$("textarea[name=email]").val();
+		// email=email.replace(/ /g,'');
+		// alert(name);
+		if(username == ''){
+			layer.msg('请输入用户名！');
+			$("input[name=username]").focus();
+			return false;
+		}
+		if(password == ''){
+			layer.msg('请输入密码！');
+			$("input[name=password]").focus();
+			return false;
+		}
+		if(pwd == ''){
+			layer.msg('请再次输入密码');
+			$("input[name=pwd]").focus();
+			return false;
+		}
+		if(password != pwd)
+		{
+			layer.msg('两次输入的密码不一致');
+			$("input[name=pwd]").focus();
+			return false;
+		}
+		$("#form-admin-add").submit();
+	}
+	function remove_input()
+    {
+        window.location.href='__APP__/Admin/Manager/index.html';
+        // $("input[name=title]").val('');
+        // $("option[value='0']").attr('selected','selected');
+        // $("textarea[name=note]").val('');
+    }
+	function upload_one()
+    {
+        $("input[name='image']").click();
+    }
+</script>
+</block>

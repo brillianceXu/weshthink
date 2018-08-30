@@ -1,0 +1,64 @@
+<extend name="Public:base"/>
+<block name="main">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 添加{$webname}分类 </nav>
+<!-- <table class="table">
+	<tr> -->
+		<!-- <td width="200" class="va-t"><ul id="treeDemo" class="ztree"></ul></td> -->
+
+<!-- <div class="page-container"> -->
+  
+<article class="page-container">
+	<form class="form form-horizontal" id="form-article-add" method="post" action="__APP__/Admin/System/link_add/id/{$mes.id}.html"  enctype="multipart/form-data">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>网站名称：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$mes.sitename}" placeholder="" id="" name="sitename">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>网址：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			<input type="text" class="input-text" value="{$mes.link}" placeholder="" id="" name="link">
+				<!-- <textarea name="link" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this,200)">{$mes.note}</textarea> -->
+				<!-- <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p> -->
+			</div>
+		</div>
+	
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<input type="hidden" name="pid" value="{$pid}"/>
+				<!-- <button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button> -->
+				<button onClick="article_save();" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				<button onClick="remove_input();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+<!-- </div> -->
+</div>
+
+<script type="text/javascript" src="/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript">
+	function article_save(){
+		var sitename=$("input[name=sitename]").val();
+		// var pid=$("select[name=pid]:selected").val();
+		var link=$("input[name=link]").val();
+		// alert(name);
+		if(sitename == ''){
+			layer.msg('请输入网站名称！');
+			$("input[name=sitename]").focus();
+			return false;
+		}
+		if(link == ''){
+			layer.msg('请输入网址！');
+			$("input[name=link]").focus();
+			return false;
+		}
+		$("#form-article-add").submit();
+	}
+	function remove_input()
+	{
+		window.location.href="__APP__/Admin/System/link.html";
+	}
+</script>
+</block>

@@ -1,0 +1,60 @@
+<extend name="Public:base"/>
+<block name="main">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 系统管理 <span class="c-gray en">&gt;</span> 系统设置 </nav>
+<div class="page-container">
+		<div class="row cl" style="margin-bottom: 30px;">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<a href="__APP__/Admin/System/index.html" class="btn btn-default radius">&nbsp;&nbsp;基本设置&nbsp;&nbsp;</a>
+				<a href="__APP__/Admin/System/service.html" class="btn btn-primary radius">&nbsp;&nbsp;客服设置&nbsp;&nbsp;</a>
+			</div>
+		</div>
+	<form action="__SELF__" method="post" class="form form-horizontal" id="form-article-add" enctype="multipart/form-data">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>客服Q Q：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$mes.qq}" placeholder="" id="" name="qq">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">客服电话：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$mes.phone}" placeholder="" id="" name="phone">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">邮箱：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$mes.email}" placeholder="" id="" name="email">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">微信关注：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<div class="uploader-thum-container">
+					<div id="fileList" class="uploader-list"></div>
+					<input type="file" name="weipic" style="display: none;" onchange="preview(this)">
+					<a onClick="upload_one();" class="btn btn-default radius">开始上传</a>
+					<div id="preview" <if condition="$mes.weipic neq ''">style="display: block;padding-top: 12px;"<else/>style="display: none;padding-top: 12px;"</if> >
+						<img width="100" height="100" src="{$mes.weipic}"/>
+					</div> 
+					
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button class="btn btn-secondary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				<button class="btn btn-default radius" type="reset">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">	
+	function upload_one()
+    {
+        $("input[name='weipic']").click();
+    }
+</script>
+
+</block>

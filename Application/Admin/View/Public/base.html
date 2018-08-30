@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<LINK rel="Bookmark" href="/favicon.ico" >
+<LINK rel="Shortcut Icon" href="{$system.ico}" />
+<block name="static">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Public/admin/lib/html5.js"></script>
+<script type="text/javascript" src="/Public/admin/lib/respond.min.js"></script>
+<script type="text/javascript" src="/Public/admin/lib/PIE_IE678.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/Public/admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/Public/admin/static/h-ui.admin/css/style.css" />
+<link href="/Public/admin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/lib/lightbox2/2.8.1/css/lightbox.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="/Public/admin/lib/modal/css/modal.css" type="text/css">
+<!-- <link rel="stylesheet" href="/Public/admin/lib/kindeditor-4.1.11-zh-CN/themes/default/default.css" /> -->
+<!-- <link rel="stylesheet" href="/Public/admin/lib/kindeditor-4.1.11-zh-CN/plugins/code/prettify.css" /> -->
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+</block>
+<title>{$system.title|default="黔北酒乡网"}</title>
+<meta name="keywords" content="{$system.keywords}">
+<meta name="description" content="{$system.description}">
+<style type="text/css">  
+ #preview, .img, img  
+ {  
+ 	/*width:200px;  */
+ 	height:200px;  
+ 	width: auto;
+ }  
+ #preview  
+ {  
+	/*border:1px solid #000;  */
+}
+.portfoliobox{
+	width: 300px;
+	height: 300px;
+}
+.portfolio-area li .picbox{
+	width: 300px;
+	height: 50px;
+	line-height: 110px;
+}
+.portfolio-area li .picbox img {
+	max-width: 280px;
+    max-height: 50px;
+    vertical-align: middle;
+}  
+.portfolio-area li .checkbox {
+	top: 5px;
+	color: red;
+}
+.carrousel {
+  position: fixed;
+  /*top: 78px;*/
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  display: none;
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+.divImg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/*top: 120px;*/
+	/*left: 2%;*/
+	/*background: green;*/
+}
+.divVideo{
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 50px;
+	left: 15%;
+	background: green;
+}
+.video_div{
+	position: relative;
+	top: -20px;
+	width: 100%;
+	height: 100%;
+}
+.carrousel img {
+	position: relative;
+	top: 100px;
+	/*width: 100%;*/
+	height: 85%;
+	width: auto;
+}
+.close {
+  /*cursor: pointer;*/
+  float: right;
+  font-size: bold;
+  position: fixed;
+  top: 78px;
+  right: 0px;
+  font-size: 18px;
+  color: black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  /*border-radius: 50%;*/
+  background: white;
+  z-index: 10000000;
+}
+/*.close:hover {
+  font-size: 20px;
+  color: #DDD;
+}*/
+.botton_des{
+	float: left;
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	/*background: green;*/
+  	z-index: 1000000;
+  	/*border: 2px solid red;*/
+}
+#form-tuijian-add .row{
+	margin-top: 70px;
+}
+/*#edui1_toolbarbox{
+	z-index: 1000000;
+}*/
+ 
+ </style> 
+</head>
+<body>
+<block name="header">
+<include file="Public:header"/>
+
+</block>
+
+<block name="menu">
+<include file="Public:menu"/>
+</block>
+
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<section class="Hui-article-box">
+	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
+		<div class="Hui-tabNav-wp">
+			<ul id="min_title_list" class="acrossTab cl">
+				<li class="active"><span title="我的桌面" data-href="welcome.html">我的桌面</span><em></em></li>
+			</ul>
+		</div>
+		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+	</div>
+	<div id="iframe_box" class="Hui-article">
+		<div class="show_iframe">
+			<div style="display:none" class="loading"></div>
+			
+
+			<block name="main">
+			<div class="page-container">
+				<p class="f-20 text-success">欢迎使用省黔集团 <span class="f-14">v2.4</span>后台系统！</p>
+				<p>登录次数：18 </p>
+				<p>上次登录IP：222.35.131.79.1  上次登录时间：2014-6-14 11:19:55</p>
+				<table class="table table-border table-bordered table-bg">
+					<thead>
+						<tr>
+							<th colspan="7" scope="col">信息统计</th>
+						</tr>
+						<tr class="text-c">
+							<th>统计</th>
+							<th>资讯库</th>
+							<th>图片库</th>
+							<th>产品库</th>
+							<th>用户</th>
+							<th>管理员</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-c">
+							<td>总数</td>
+							<td>92</td>
+							<td>9</td>
+							<td>0</td>
+							<td>8</td>
+							<td>20</td>
+						</tr>
+						<tr class="text-c">
+							<td>今日</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr class="text-c">
+							<td>昨日</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr class="text-c">
+							<td>本周</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr class="text-c">
+							<td>本月</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			</block>
+
+			<block name="footer">
+				<include file="Public:footer"/>
+			</block>
+
+		</div>
+	</div>
+</section>
+<block name='modal'></block>
+<script type="text/javascript" src="/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/Public/admin/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/Public/admin/static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="/Public/admin/static/h-ui.admin/js/H-ui.admin.js"></script> 
+<script type="text/javascript" src="/Public/admin/lib/webuploader/0.1.5/webuploader.js"></script> 
+<script type="text/javascript" src="/Public/admin/lib/My97DatePicker/WdatePicker.js"></script> 
+<!-- <script type="text/javascript" src="/Public/admin/static/h-ui.admin/js/H-ui.admin.page.js"></script> -->
+<script type="text/javascript" src="/Public/admin/lib/lightbox2/2.8.1/js/lightbox.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/Public/admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+
+<!-- <script type="text/javascript" src="__PUBLIC/admin/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js"></script>  -->
+<!-- <script charset="utf-8" src="/Public/admin/lib/kindeditor-4.1.11-zh-CN/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="/Public/admin/lib/kindeditor-4.1.11-zh-CN/lang/zh-CN.js"></script>
+<script charset="utf-8" src="/Public/admin/lib/kindeditor-4.1.11-zh-CN/plugins/code/prettify.js"></script> -->
+<script type="text/javascript">
+ // KindEditor.ready(function(K) {
+        // window.editor = K.create('#editor');
+// });
+	var ue = UE.getEditor('editor');
+
+$(function(){
+    $.Huihover(".portfolio-area li");
+});
+// 单图上传预览
+function preview(file)  
+{  
+	var prevDiv = document.getElementById('preview');  
+	prevDiv.style.display="block";
+	if (file.files && file.files[0])  
+	{  
+		var reader = new FileReader();  
+		reader.onload = function(evt){  
+			prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';  
+		}    
+	 	reader.readAsDataURL(file.files[0]);  
+	}  
+	else    
+	{  
+	 	prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';  
+	}  
+ }  
+//下面用于多图片上传预览功能
+
+    function setImagePreviews(avalue) {
+
+        var docObj = document.getElementById("doc");
+
+        var dd = document.getElementById("dd");
+
+        dd.innerHTML = "";
+
+        var fileList = docObj.files;
+
+        for (var i = 0; i < fileList.length; i++) {            
+
+
+
+            dd.innerHTML += "<div style='float:left;height:200px;margin-top:50px;' > <img id='img" + i + "'  /> </div>";
+
+            var imgObjPreview = document.getElementById("img"+i); 
+
+            if (docObj.files && docObj.files[i]) {
+
+                //火狐下，直接设img属性
+
+                imgObjPreview.style.display = 'block';
+
+                imgObjPreview.style.width = '250px';
+
+                imgObjPreview.style.height = '150px';
+
+                //imgObjPreview.src = docObj.files[0].getAsDataURL();
+
+                //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+
+                imgObjPreview.src = window.URL.createObjectURL(docObj.files[i]);
+
+            }
+
+            else {
+
+                //IE下，使用滤镜
+
+                docObj.select();
+
+                var imgSrc = document.selection.createRange().text;
+
+                alert(imgSrc)
+
+                var localImagId = document.getElementById("img" + i);
+
+                //必须设置初始大小
+
+                localImagId.style.width = "150px";
+
+                localImagId.style.height = "180px";
+
+                //图片异常的捕捉，防止用户修改后缀来伪造图片
+
+                try {
+
+                    localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+
+                    localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+
+                }
+
+                catch (e) {
+
+                    alert("您上传的图片格式不正确，请重新选择!");
+
+                    return false;
+
+                }
+
+                imgObjPreview.style.display = 'none';
+
+                document.selection.empty();
+
+            }
+
+        }  
+
+
+
+        return true;
+
+    }
+    $(function(){
+	$.Huihover(".portfolio-area li");
+});
+</script>
+</body>
+</html>

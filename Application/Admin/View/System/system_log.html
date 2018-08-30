@@ -1,0 +1,135 @@
+﻿<extend name="Public:base"/>
+<block name="main">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 系统管理 <span class="c-gray en">&gt;</span> 系统日志 </nav>
+<div class="page-container" style="padding-top: 0px;">
+  <!-- <div class="text-c"> 日期范围：
+    <input type="text" id="logmin" class="input-text Wdate" style="width:120px;">
+    -
+    <input type="text" id="logmax" class="input-text Wdate" style="width:120px;">&nbsp;&nbsp;
+    <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i>搜索</button>
+  </div> -->
+  <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
+  <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a></span> <span class="r">
+  共有数据：<strong>{$article_count}</strong> 条</span> 
+  </div>
+  <form action="" method="post" id="del_form">
+  <table class="table table-border table-bordered table-bg table-hover table-sort">
+    <thead>
+      <tr class="text-c">
+        <th width="25"><input type="checkbox" name="" value=""></th>
+        <th width="30">ID</th>
+        <!-- <th width="100">类型</th> -->
+        <th>操作行为</th>
+        <th>操作状态</th>
+        <th>操作账号</th>
+        <th>IP地址</th>
+        <th width="300">备注</th>
+        <th width="120">时间</th>
+        <th width="70">操作</th>
+      </tr>
+    </thead>
+    <tbody> 
+      <volist name="log" id="v">
+      <tr class="text-c">
+        <td><input type="checkbox" value="{$v.id}" name="del[]"></td>
+        <td>{$v.id}</td>
+        <td>{$v.action}</td>
+        <td><if condition="$v.status eq 1">成功<else/>失败</if></td>
+        <td>{$v.username}</td>
+        <td>{$v.uip}</td>
+        <td>{$v.note}</td>
+        <td>{$v.dotime}</td>
+        <td>
+        <!-- <a title="详情" href="javascript:;" onclick="system_log_show(this,'10001')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe665;</i></a>  -->
+        <a title="删除" href="javascript:;" onclick="system_log_del({$v.id})" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+      </tr>
+      </volist>
+    </tbody>
+  </table>
+  </form>
+  <div id="pageNav" class="pageNav">
+    <div class="cl pd-5 bg-1 bk-gray mt-20" style="line-height: 35px;"> 
+<style type="text/css">
+.paginate_button {
+  border: 1px solid #ccc;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 0 6px 6px;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.current{
+  background: #5a98de none repeat scroll 0 0;
+    color: #fff;
+}
+</style>
+  
+  <span class="r">
+    <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+    <if condition="$page eq 1">
+    <else/>
+    <a href="__APP__/Admin/System/system_log/page/1" class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">首页</a>
+    <a href="__APP__/Admin/System/system_log/page/{$page-1}" class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">上一页</a>
+    </if>
+    <span>
+      <a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">{$page}</a>
+    </span>
+    <if condition="$page eq $totalPage">
+    <else/>
+    <a  href="__APP__/Admin/System/system_log/page/{$page+1}" class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" id="DataTables_Table_0_next">下一页</a>
+    <a  href="__APP__/Admin/System/system_log/page/{$totalPage}" class="paginate_button next disabled" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" id="DataTables_Table_0_next">尾页</a>
+    </if>
+    </div>
+  </span>
+  </div>
+  </div>
+</div>
+
+<script>
+function system_log_del(id){
+  layer.confirm("确定删除吗？",function(){
+      $.get(
+        "__APP__/Admin/System/del_log",
+        {id:id},
+        function(msg){
+          if(msg == '200'){
+              layer.msg('已删除!',{icon: 5,time:1000},function(){
+                location.reload();
+              });
+          }else{
+            layer.msg("删除失败");
+          }
+        }
+      );
+  })
+}
+function datadel(){
+  $("#del_form").attr("action","__APP__/Admin/System/datadel");
+  $("#del_form").submit();
+  // var del=$("input[name=del]:checked").val();
+  // if(del == ''){
+  //   layer.msg("请选择要删除的内容");
+  // }else{
+  //   layer.confirm('确认要删除吗？',function(index){
+  //     //此处请求后台程序，下方是成功后的前台处理……
+  //     $.get("__APP__/Admin/System/datadel",{del:del},function(msg){
+  //       if(msg == '200'){
+  //         layer.msg('已删除!',{icon: 5,time:1000},function(){
+  //           location.reload();
+  //         });
+  //       }else{
+  //         layer.msg("删除失败");
+  //       }
+  //     });
+      
+  //   });
+  // }
+  
+}
+</script>
+</block>
